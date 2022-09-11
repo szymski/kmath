@@ -47,7 +47,9 @@ public object Euclidean2DSpace : GeometrySpace<DoubleVector2D>,
     private data class Vector2DImpl(
         override val x: Double,
         override val y: Double,
-    ) : DoubleVector2D
+    ) : DoubleVector2D {
+        override fun toString(): String = "Vector2D(x=$x, y=$y)"
+    }
 
     public fun vector(x: Number, y: Number): DoubleVector2D = Vector2DImpl(x.toDouble(), y.toDouble())
 

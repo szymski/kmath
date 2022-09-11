@@ -15,7 +15,7 @@ allprojects {
     }
 
     group = "space.kscience"
-    version = "0.3.1-dev-4"
+    version = "0.3.1-dev-4-kotlin-1.7.10"
 }
 
 subprojects {
